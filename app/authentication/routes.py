@@ -21,7 +21,7 @@ def signup():
             db.session.add(user)
             db.session.commit()
 
-            return redirect(url_for('site.sign_in'))
+            return redirect(url_for('auth.signin'))
 
     except:
         raise Exception('Invalid form data: Please check your form')
