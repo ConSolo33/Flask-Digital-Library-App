@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="text-light text-center shadow mt-5">
+    <div class="container p-5 col-4 bg-secondary bg-opacity-50 rounded">
+        <div class="row">
+            <div class="d-md-flex align-items-center justify-content-evenly">
+                <h1 class="col text-center">Digital Book Collection API</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="d-md-flex align-items-center justify-content-evenly">
+                <p class="col text-center"><br>A digital library for all of your reading pleasures!
+                Create an account in order to start cataloging all of the info for all of your favorite 
+                books.  As a back end Flask Application, there are calls to Create, Retrieve, Update,
+                and Delete available  for ease of access as well as management for your digital library.
+                Happy reading!</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="text-center">
+    <div class="container col-4 bg-secondary bg-opacity-50 bg-rounded p-5">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-8 d-flex align-items-center justify-content-center rounded">
+                <img src="../static/images/lib3.jpg" class="img-fluid rounded" alt="car driving on a road">
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+</section>
+<footer class="bg-dark text-light text-center p-3 mt-5">© Connor Solawetz 2023 -- Images sourced from Unplash</footer>
+{% endblock %}

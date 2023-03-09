@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="container text-center bg-secondary bg-opacity-50 p-5 mt-5">
+    <div class="row">
+        <div class="col-4 justify-content-center text-light text-center">
+            <h2>Sign In</h2>    
+            {% include 'forms.html' %}
+        </div>
+        <div class="col-3"></div>
+        <img src="../static/images/lib1.jpg" alt="library" class="img-fluid p-6 justify-content-center col-4">
+    </div>
+</section>
+
+{% endblock %}

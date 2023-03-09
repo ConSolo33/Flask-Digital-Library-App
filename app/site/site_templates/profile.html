@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <section class="text-light text-center shadow mt-5 mb-5">
+        <div class="container p-5 col-6 bg-secondary bg-opacity-50">
+            <div class="row">
+                <div class="d-md-flex align-items-center justify-content-evenly">
+                    <h1 class="col text-center">User Profile Details: <br> {{ current_user.email}}</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container p-5 col-6 bg-secondary bg-opacity-50">
+            <div class="row"><br>
+                <ul class="list-group">
+                    <li class="list-group-item">Email: {{ current_user.email }}</li>
+                    <li class="list-group-item">Token: {{ current_user.token }} </li> 
+                </ul>
+            </div>
+            <div class="row" style="margin-top: 20px;">
+                <div class="col-3"></div>
+                <div class="col-5 p-2">
+                    <img src="../static/images/lib2.jpg" class="d-flex align-items-center justify-content-center p-50 img-fluid" alt="">
+                </div>
+                <div class="col-3"></div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
